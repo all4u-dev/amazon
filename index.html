@@ -38,3 +38,32 @@
   <script src="js/main.js"></script>
 </body>
 </html>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/2349169465383" target="_blank" class="whatsapp-float">
+  <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="Chat on WhatsApp" />
+</a>
+
+<style>
+  .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    background-color: transparent;
+    border-radius: 50%;
+  }
+  .whatsapp-float img {
+    width: 60px;
+    height: 60px;
+    animation: bounce 2s infinite;
+  }
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+</style>
